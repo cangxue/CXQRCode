@@ -13,6 +13,9 @@
 		D194E8201F3BEFB60094564B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D194E81E1F3BEFB60094564B /* Main.storyboard */; };
 		D194E8221F3BEFB60094564B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D194E8211F3BEFB60094564B /* Assets.xcassets */; };
 		D194E8251F3BEFB60094564B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D194E8231F3BEFB60094564B /* LaunchScreen.storyboard */; };
+		D194E82F1F3BF43A0094564B /* CXQRCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D194E82E1F3BF43A0094564B /* CXQRCodeScanManager.m */; };
+		D194E8321F3C00AB0094564B /* CXQRCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = D194E8311F3C00AB0094564B /* CXQRCodeScanView.m */; };
+		D194E8351F3C312D0094564B /* CXQRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D194E8341F3C312D0094564B /* CXQRCodeScanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		D194E8211F3BEFB60094564B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D194E8241F3BEFB60094564B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D194E8261F3BEFB60094564B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D194E82D1F3BF43A0094564B /* CXQRCodeScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXQRCodeScanManager.h; sourceTree = "<group>"; };
+		D194E82E1F3BF43A0094564B /* CXQRCodeScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXQRCodeScanManager.m; sourceTree = "<group>"; };
+		D194E8301F3C00AB0094564B /* CXQRCodeScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXQRCodeScanView.h; sourceTree = "<group>"; };
+		D194E8311F3C00AB0094564B /* CXQRCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXQRCodeScanView.m; sourceTree = "<group>"; };
+		D194E8331F3C312D0094564B /* CXQRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXQRCodeScanViewController.h; sourceTree = "<group>"; };
+		D194E8341F3C312D0094564B /* CXQRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXQRCodeScanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,13 @@
 		D194E8141F3BEFB60094564B /* CXQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				D194E82C1F3BF3C60094564B /* CXQRCode */,
 				D194E8181F3BEFB60094564B /* AppDelegate.h */,
 				D194E8191F3BEFB60094564B /* AppDelegate.m */,
 				D194E81B1F3BEFB60094564B /* ViewController.h */,
 				D194E81C1F3BEFB60094564B /* ViewController.m */,
+				D194E8331F3C312D0094564B /* CXQRCodeScanViewController.h */,
+				D194E8341F3C312D0094564B /* CXQRCodeScanViewController.m */,
 				D194E81E1F3BEFB60094564B /* Main.storyboard */,
 				D194E8211F3BEFB60094564B /* Assets.xcassets */,
 				D194E8231F3BEFB60094564B /* LaunchScreen.storyboard */,
@@ -77,6 +89,17 @@
 				D194E8161F3BEFB60094564B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D194E82C1F3BF3C60094564B /* CXQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				D194E82D1F3BF43A0094564B /* CXQRCodeScanManager.h */,
+				D194E82E1F3BF43A0094564B /* CXQRCodeScanManager.m */,
+				D194E8301F3C00AB0094564B /* CXQRCodeScanView.h */,
+				D194E8311F3C00AB0094564B /* CXQRCodeScanView.m */,
+			);
+			path = CXQRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D194E81D1F3BEFB60094564B /* ViewController.m in Sources */,
+				D194E82F1F3BF43A0094564B /* CXQRCodeScanManager.m in Sources */,
 				D194E81A1F3BEFB60094564B /* AppDelegate.m in Sources */,
+				D194E8321F3C00AB0094564B /* CXQRCodeScanView.m in Sources */,
+				D194E8351F3C312D0094564B /* CXQRCodeScanViewController.m in Sources */,
 				D194E8171F3BEFB60094564B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +338,7 @@
 				D194E82B1F3BEFB60094564B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
