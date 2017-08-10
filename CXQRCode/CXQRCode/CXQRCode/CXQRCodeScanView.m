@@ -81,34 +81,20 @@ static CGFloat const scanninglineHeight = 2;
 
 - (void)scanAnimate {
     __block CGRect frame = _scanningline.frame;
-    static BOOL flag = YES;
-    if (flag) {
-        flag = NO;
+    CGFloat scanContent_MaxY = scanContent_Y + self.frame.size.width - 2 * scanContent_X;
+    if (_scanningline.frame.origin.y >= scanContent_MaxY - 10) {
         frame.origin.y = scanContent_Y;
+        _scanningline.frame = frame;
+    } else {
         [UIView animateWithDuration:scanningLineAnimation animations:^{
             frame.origin.y += 5;
             _scanningline.frame = frame;
-        }];
-    } else {
-        if (_scanningline.frame.origin.y >= scanContent_Y) {
-            CGFloat scanContent_MaxY = scanContent_Y + self.frame.size.width - 2 * scanContent_X;
-            if (_scanningline.frame.origin.y >= scanContent_MaxY - 10) {
-                frame.origin.y = scanContent_Y;
-                _scanningline.frame = frame;
-                flag = YES;
-            } else {
-                [UIView animateWithDuration:scanningLineAnimation animations:^{
-                    frame.origin.y += 5;
-                    _scanningline.frame = frame;
-                } completion:nil];
-            }
-        } else {
-            flag = !flag;
-        }
+        } completion:nil];
     }
+
 }
 
-#pragma mark - lazy 
+#pragma mark - lazy
 - (CADisplayLink *)displayLink {
     if (!_displayLink) {
         _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(handleDisplayLink:)];
