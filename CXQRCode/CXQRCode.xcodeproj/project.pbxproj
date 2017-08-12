@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D13AFD4E1F3F56570024C049 /* CXQRCodeGenerateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D13AFD4D1F3F56570024C049 /* CXQRCodeGenerateManager.m */; };
 		D194E8171F3BEFB60094564B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D194E8161F3BEFB60094564B /* main.m */; };
 		D194E81A1F3BEFB60094564B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D194E8191F3BEFB60094564B /* AppDelegate.m */; };
 		D194E81D1F3BEFB60094564B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D194E81C1F3BEFB60094564B /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D13AFD4C1F3F56570024C049 /* CXQRCodeGenerateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXQRCodeGenerateManager.h; sourceTree = "<group>"; };
+		D13AFD4D1F3F56570024C049 /* CXQRCodeGenerateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXQRCodeGenerateManager.m; sourceTree = "<group>"; };
 		D194E8121F3BEFB60094564B /* CXQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D194E8161F3BEFB60094564B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D194E8181F3BEFB60094564B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				D194E82E1F3BF43A0094564B /* CXQRCodeScanManager.m */,
 				D194E8301F3C00AB0094564B /* CXQRCodeScanView.h */,
 				D194E8311F3C00AB0094564B /* CXQRCodeScanView.m */,
+				D13AFD4C1F3F56570024C049 /* CXQRCodeGenerateManager.h */,
+				D13AFD4D1F3F56570024C049 /* CXQRCodeGenerateManager.m */,
 			);
 			path = CXQRCode;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				D194E81A1F3BEFB60094564B /* AppDelegate.m in Sources */,
 				D194E8321F3C00AB0094564B /* CXQRCodeScanView.m in Sources */,
 				D194E8351F3C312D0094564B /* CXQRCodeScanViewController.m in Sources */,
+				D13AFD4E1F3F56570024C049 /* CXQRCodeGenerateManager.m in Sources */,
 				D194E8171F3BEFB60094564B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
