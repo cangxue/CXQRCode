@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CXQRCodeGenerateManager : NSObject
+
+// 生成普通二维码
++ (UIImage *)CX_generateDefaultQRCodeWithData:(NSString *)data imageWidth:(CGFloat)imageWidth;
 
 @end
